@@ -1,0 +1,110 @@
+Computação Quântica
+Lista de Exercícios 1
+Aluno: Matheus Costa Batista da Silva
+
+    1.
+        a. mesmo estado
+        b. mesmo estado
+        c. estados diferentes
+        d. mesmo estado
+        e. estados diferentes
+
+    2.
+        a. está em superposição. base {|+>,|->}
+        b. não está em superposição
+        c. não está em superposição
+        d. está em superposição. base {|+>,|->}
+    
+    3.
+        estados B e C
+
+    4.
+        a.  
+            |0> com (sqrt(3)/2)^2 = 3/4 = 75%
+            |1> com (1/2)^2 = 1/4 = 25%
+        b.
+            |i> com (1/sqrt(2))^2 = 1/2 = 50%
+            |-i> com (1/sqrt(2))^2 = 1/2 = 50%
+        c.
+            **CONSIDERANDO |+>, {1/2|0>+sqrt(3)/2|1>,sqrt(3)/2|0> − 1/2|1>}**
+            |b1> = (1/2|0> + sqrt(3)/2|1>) e |b2> = (sqrt(3)/2|0> − 1/2|1>)
+            |+> = 1/sqrt(2)(1/2|0> + sqrt(3)/2|1> +sqrt(3)/2|0> − 1/2|1>)
+            |+> = 1/sqrt(2)((sqrt(3)+1)/2|0> + (sqrt(3)-1)/2|1>)
+            |+> = (sqrt(3)+1)/(2*sqrt(2))|0> + (sqrt(3)-1)/(2*sqrt(2)|1>)
+
+            |b1> com (sqrt(3)+1)/(2*sqrt(2))^2 = (4 + 2sqrt(3))/8 = (2 + sqrt(3))/4 = 93.301%
+            |b2> com (sqrt(3)-1)/(2*sqrt(2))^2 = (4 - 2sqrt(3))/8 = (2 - sqrt(3))/4 = 6.699%
+    
+    5.
+        a.
+            1/sqrt(2)(|0> + i|1>) = 1/sqrt(2)|0> + 1isqrt(2)|1> = |i>
+            para |v> = (a|0> + b|1>) ser ortogonal a |i> a/sqrt(2) + b*i/sqrt(2) = 0. 
+            Assim temos que a + bi = 0 e a = -bi. Portanto o vetor unitario é 1/sqrt(2)(|0> - i|1>) = |-i>
+            com isso a base é {|i>, |-i>}
+        b.
+            1/2|+> − isqrt(3)/2|−> => a/2 - bi*sqrt(3)/2 = 0
+            a = bi*sqrt(3)
+            Portanto o vetor unitario é 1/2|+> + isqrt(3)/2|->)
+            a base é {1/2(|+> − isqrt(3)/2|−>), 1/2(|+> + isqrt(3)|->)}
+
+    6.
+        |1> e -|1> representam o mesmo estado pois existe um K tal que K(|1>) = -|1> onde K = -1.
+        Entretnto, não existe um K tal que K(1/sqrt(2)(|0>+|1>)) = 1/sqrt(2)(|0>-|1>) e por isso esses estados são diferentes.
+
+    7.
+
+    8.
+        |+>.
+            |+> = 1/sqrt(2)|0> + 1/sqrt(2)|1>) 
+            cos(θ) =  1/sqrt(2)  
+            θ = 90°
+            e^(iΦ)sen(θ) =  1/sqrt(2)
+            e^(iΦ)sen(90°) => e^(iΦ)sqrt(2)
+            e^(iΦ)sqrt(2) = 1/sqrt(2)
+            e^(iΦ) = 1
+            Φ = 0
+            |+> está em cima da parte positiva do eixo y
+
+        |->.
+            |-> = 1/sqrt(2)|0> - 1/sqrt(2)|1>) 
+            cos(θ) =  1/sqrt(2)  
+            θ = 90°
+            e^(iΦ)sen(θ) =  -1/sqrt(2)
+            e^(iΦ)sen(90°) => e^(iΦ)sqrt(2)
+            e^(iΦ)sqrt(2) = -1/sqrt(2)
+            e^(iΦ) = -1
+            Φ = 180°
+            |-> está em cima da parte negativa do eixo y
+
+        |i>.
+            |i> = 1/sqrt(2)|0> + i/sqrt(2)|1>) 
+            cos(θ) =  1/sqrt(2)  
+            θ = 90°
+            e^(iΦ)sen(θ) =  i/sqrt(2)
+            e^(iΦ)sen(90°) => e^(iΦ)sqrt(2)
+            e^(iΦ)sqrt(2) = i/sqrt(2)
+            e^(iΦ) = i
+            Φ = 90°
+            |i> está em cima da parte positiva do eixo x
+
+        |-i>.
+            |-i> = 1/sqrt(2)|0> - 1/sqrt(2)|1>) 
+            cos(θ) =  1/sqrt(2)  
+            θ = 90°
+            e^(iΦ)sen(θ) =  -i/sqrt(2)
+            e^(iΦ)sen(90°) => e^(iΦ)sqrt(2)
+            e^(iΦ)sqrt(2) = -i/sqrt(2)
+            e^(iΦ) = -i
+            Φ = 270°
+            |-i> está em cima da parte negativa do eixo x
+
+    9.  
+        Pontos antipodais da esfera de bloch são aqueles que possuem os sinais das cordenadas cartesianas invertidos.
+        Tendo θ = arccos(z) e Φ = arctg(y/x) após uma inversao de sinais Φ permanece inalterado mas θ vai para θ+180°
+        uma vez que arccos(-x) = 180° - arccos x.
+        Assim para mostrar que |a> = e^(iγ)(cos(θ/2)|0> + e^(iϕ)sin(θ/2)|1>) e |b> = e^(iγ)(cos((θ+180°)/2)|0> + e^(iϕ)sin((θ+180°)/2)|1>)
+        sao ortogonais mostramos que e^(iγ)(cos(θ/2)*cos((θ+180°)/2) + e^(iϕ)sin(θ/2)|1>e^(iϕ)sin((θ+180°)/2)) = 0 
+        (cos(θ/2)*cos((θ+180°)/2) + e^(iϕ)sin(θ/2)|1>e^(iϕ)sin((θ+180°)/2) = 0
+        cos(θ/2)cos((θ+180°)/2) + sin(θ/2)sin((θ+180°)/2) = 0
+        cos(θ/2 - (θ+180°)/2) = 0
+        cos(-90°) = 0 ==> Portanto pontos antipodais são ortogonais 
